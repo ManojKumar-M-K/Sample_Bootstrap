@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Concepts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+            font-weight: 400;
+        }
+        
+        .col-3 {
+            position: fixed;
+            height: 100%;
+        }
+        .col-9 {
+            margin-left: 343px;
+            padding: 0;
+        }
+        .col-9 .btn {
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            background: rgb(34, 176, 201);
+            color: white;
+            padding: 10px 25px;
+            font-size: 17px;
+        }
+        .col-9 .btn:hover {
+            letter-spacing: 1px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 10px;
+            text-align: center;
+            padding: 5px;
+        }
+        .grid .one img ,.two img, .three img{
+            height: 300px;
+        }
+        .grid .one p , .two p , .three p{
+            line-height: 1.3;
+        }
+        .grid .one h3 , .two h3 , .three h3{
+            line-height: 1.8;
+        }
+        .container1 {
+            width: 100%;
+            background: rgb(141, 142, 143);
+            border-radius: 5px;
+        }
+        .skills {
+            text-align: right;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: white;
+        }
+        .html {
+            width: 90%; background-color: #d2f318;
+        }
+        .css {
+            width: 80%; background-color: #2196F3;
+        }
+        .js {
+            width: 65%; background-color: #f44336;
+        }
+        .ReactJs {
+            width: 60%; background-color: #f33fc6;
+        }
+        .row1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            align-items: center;
+        }
+        .row1 .col-4 h3 {
+            /* line-height: 1.8; */
+            padding-top: 20px;
+            color:lightseagreen ;
+        }
+        .row1 .col-4 {
+            height: 350px;
+        }
+        .row2 .btn {
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            background: rgb(34, 176, 201);
+            color: white;
+            /* padding: 10px 30px; */
+            font-size: 17px;
+            position: absolute;
+            left: 700px; 
+        }
+        iframe {
+            width: 100%; height:350px;
+            padding-left: 50px;       
+        }
+        .icons {
+        background-color:rgb(224, 224, 224) ;
+        padding: 40px;
+        margin-left: 40px;
+    }
+        
+        
+    </style>
+
+
+
+</head>
+<body>
+    <div class="container" style="margin-left: 0; margin-right: 0;">
+        <div class="row">
+            <div class="col-3" style="background-color: gray;"><br>
+                <div class="row" style="row-gap: 5px;  color: white; text-align: center;">
+                    <img src="CSS/images/Flomic.jpeg" style="margin-top:10px; padding: 1px; margin-bottom: 40px;">
+                    <div style="background-color: rgb(82, 80, 80);">
+                        <div style="color: deepskyblue;">HOME</div>
+                    </div>
+                    <div style="background-color: rgb(82, 80, 80);;">
+                        <div>ABOUT US</div>
+                    </div>
+                    <div style="background-color: rgb(82, 80, 80);;">
+                        <div>SERVICES</div>
+                    </div>
+                    <div style="background-color: rgb(82, 80, 80);;">
+                        <div>PORTFOLIO</div>
+                    </div>
+                    <div style="background-color: rgb(82, 80, 80);;">
+                        <div>CONTACT</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <img src="CSS/images/Evening_1024.jpg" style="width: 990px;height: 550px; position: relative;">
+                <h1 style="position: absolute; top: 40%; left: 50%; color: white;">RESPONSIVE LAYOUT</h1>
+                <h2 style="position: absolute; top: 50%; left: 45%; width: 600px; color: white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h2>
+                <a href="#" class="btn" style="position: absolute; top: 63%; left: 58%;">Read more</a>
+                <br><br>
+                <h1 class="bs-info-text-emphasis" style="text-align: center; height: 50px;" >WELCOME TO TEMPLATE</h1>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis iste quos deleniti inventore temporibus, eos saepe, dolorum harum ipsam deserunt maxime neque iure ut fugiat aliquam adipisci omnis, illo ullam?</p>
+                <!-- <div class=" bg-primary" style="height: 5px;"></div> -->
+                <!-- <div class=" bg-primary" style="width: 170px; height: 50px; text-align: center;"><h2>SERVICES</h2></div>
+                <br><br>
+                <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+                <div class="col-4 bg-primary" style="width: 280px; height: 50px;text-align: center; padding: 10px;">The Best Support Ever</div>
+                <div class="col-4 bg-primary" style="width: 280px; height: 50px; text-align: center; padding: 10px;">The Best Support Ever</div>
+                <div class="col-4 bg-primary" style="width: 280px; height: 50px; text-align: center; padding: 10px;">The Best Support Ever</div></div> -->
+                <div class=" bg-primary" style="height: 5px; margin-left: 15px;"></div>
+                <div class=" bg-primary" style="width: 190px; height: 50px; text-align: center; padding: 5px; color: white; margin-left: 15px;"><h2>ABOUT US</h2></div>
+                <br><br>
+                <div class="grid">
+                <div class=" one">
+                    <img src="CSS/images/model-1.jpg">
+                    <h3>Model-1</h3>
+                    <p>Marketing Director</p>
+                </div>
+                <div class="two ">
+                    <img src="CSS/images/model-2.jpg">
+                    <h3>Model-2</h3>
+                    <p>Creative Executive</p>
+                </div>
+                <div class="three ">
+                    <img src="CSS/images/model-3.jpg">
+                    <h3>Model-3</h3>
+                    <p>Company President</p>
+                </div>
+            </div><br><br>
+            <div class="row">
+            <div class="col-8 ">
+                <h3 style="padding-left: 20px;">OUR MANAGEMENT TEAM</h3>
+                <p style="padding-left: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas earum iure inventore in maxime nesciunt aliquid, sit magni, fugit laborum eius excepturi quae iste eaque, quibusdam eum rerum itaque saepe.</p>
+                <p style="padding-left: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non mollitia harum optio labore maiores atque, quas, nulla ab minus cupiditate molestiae inventore, odio ipsa tempora incidunt esse quidem quo eum.</p>
+            </div>
+            <div class="col-4 " style="height: 250px;">
+                <img src="CSS/images/mackbook.jpg" style="height: 200px;">
+            </div>
+        </div>
+        <div class=" bg-primary" style="height: 5px; margin-left: 20px;"></div>
+        <div class=" bg-primary" style="width: 170px; height: 50px; text-align: center; color: white; margin-left: 20px;"><h2>SERVICES</h2></div>
+                <br><br>
+                <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+                <div class="col-4 bg-primary" style="width: 260px; height: 50px;text-align: center; padding: 10px; color: white; margin-left: 15px;">The Best Support Ever</div>
+                <div class="col-4 bg-primary" style="width: 260px; height: 50px; text-align: center; padding: 10px; color: white; margin-left: 15px;">The Best Support Ever</div>
+                <div class="col-4 bg-primary" style="width: 260px; height: 50px; text-align: center; padding: 10px; color: white; margin-left: 15px;">The Best Support Ever</div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-8 ">
+                    <h3 style="margin-left: 15px;">OUR SKILLS</h3>
+                    <p style="margin-left: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ratione assumenda explicabo fugiat, dolore quidem sequi dolores id et dolorum quo enim esse quas blanditiis, in aliquid, optio quos exercitationem.</p>
+
+                </div>
+                <div class="col-4 ">
+                    <div class="container1">
+                        <div class="skills html">HTML 90%</div>
+                      </div><br>
+                      
+                      <div class="container1">
+                        <div class="skills css">CSS 80%</div>
+                      </div><br>
+                      
+                      <div class="container1">
+                        <div class="skills js">Javascript 65%</div>
+                      </div><br>
+                      
+                      <div class="container1">
+                        <div class="skills ReactJs">ReactJs 60%</div>
+                      </div><br><br>
+
+                    </div>
+            
+                </div>
+                <div class=" bg-primary" style="height: 5px; margin-left: 20px;"></div>
+                <div class=" bg-primary" style="width: 200px; height: 50px; text-align: center; color: white; margin-left: 20px;"><h2>PORTFOLIO</h2></div><br><br>
+                <div class="row1" style="padding-left: 40px;">
+                    <div class="col-4">
+                        <img src="CSS/images/portfolio-1.jpeg">
+                        <h3>CREATIVE</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="CSS/images/portfolio-1.jpeg">
+                        <h3>CREATIVE</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="CSS/images/portfolio-1.jpeg">
+                        <h3>CREATIVE</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="CSS/images/portfolio-1.jpeg">
+                        <h3>CREATIVE</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="CSS/images/portfolio-1.jpeg">
+                        <h3>CREATIVE</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="CSS/images/portfolio-1.jpeg">
+                        <h3>CREATIVE</h3>
+                    </div>
+                    <div class="row2">
+                        <a href="#" class="btn">Read more</a>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <div class=" bg-primary" style="height: 5px; margin-left: 15px;"></div>
+                <div class=" bg-primary" style="width: 190px; height: 50px; text-align: center; padding: 5px; color: white; margin-left: 15px;"><h2>ABOUT US</h2></div>
+                <br><br>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31206.264057189197!2d78.13088447368415!3d12.126994197707763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac16f95a63ed01%3A0x3f2cb64e61c93aef!2sDharmapuri%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1695497251720!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br><br>
+                <div class="container" style="margin-left: 35px;">
+                <div class="row">
+                    <div class="col-4">
+                    <label>Name:*</label><br>
+                    <input type="text">
+                </div>
+                <div class="col-4">
+                    <label>Email:*</label><br>
+                    <input type="text" name="text" placeholder="text">
+                </div>
+                <div class="col-4">
+                    <label>Subject:</label><br>
+                    <input type="text">
+                </div>
+                </div><br>
+                <div>
+                    <label>Message:</label><br>
+                    <textarea name="taComments" placeholder="Describe here:" cols="100" rows="5" >This is my message</textarea><br>
+                </div>
+                <div class=" bg-primary" style="width: 190px; height: 40px;padding-top: 5px; text-align: center;color: white; margin-left: 0px; font-size:larger;"><p>SEND MESSAGE</p></div>
+                
+            </div><br><br>
+            <div class="icons" style="background-color: lightgray; padding: 30px;">
+                <div style="text-align: center; font-size: large;">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-square-snapchat"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                
+            </div>
+            <div>
+                <div style="text-align: center; height: 100px; background-color: gray; padding-top: 40px;">
+                    ©CopyRight2015 <span style="color: white;">Flomic</span>    
+                </div>
+            </div>
+            
+            </div>
+        
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>
